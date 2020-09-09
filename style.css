@@ -1,0 +1,222 @@
+/* Add a smooth scrolling effect to the document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* load manascaperegular font on the page */
+@font-face {
+  font-family: 'manaspaceregular';
+  src: url('fonts/manaspc-webfont.woff2') format('woff2'),
+       url('fonts/manaspc-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* change h1 of first jumbotron */
+h1.first {  
+  font-family: 'manaspaceregular';
+  color: white;
+  font-size: 60px;
+  margin-top: 150px;
+}
+
+/* add space between heading and text */
+h1.second {
+  margin-bottom: 20px;
+}
+
+/* change gameportal's h2 to black */
+h2.peliportaali {
+  color: black;
+}
+
+/* bring team name closer to heading and push picture element downwards */
+h3.tiimi-nimi {
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+/* add space under trailer */
+.embed-responsive-16by9 {
+  margin-bottom: 20px;
+}
+
+/* remove spacing between jumbotrons */
+.jumbotron {
+  margin: 0px;
+}
+
+/* bring team member's name, role and picture closer */ 
+p.text-center {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+/* scale pictures of the game and add some padding between them */
+.fluid-kuvaus {
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+}
+
+/* scale pictures of team members */
+.fluid-tiimikuva {
+  width: 220px;
+  height: 270px;
+}
+
+/* scale google play logo and adjust positioning */
+.fluid-google-logo {
+  width: 337px;
+  height: 120px;
+  margin-top: -20px;
+}
+
+/* set background image for first jumbotron and make it cover whole element */
+.jumbotron-first {
+  background-image: url("images/etusivu1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #3b262f;
+  height: 400px;
+}
+
+/* set background color for second jumbotron */
+.jumbotron-second {
+  background-color: #e9eef0;
+}
+
+/* set background color for third jumbotron */
+.jumbotron-third {
+  background-color: white;
+}
+
+/* set background color for fourth jumbotron */
+.jumbotron-fourth {
+  background-color: #e9eef0;
+}
+
+/* set background color for fifth jumbotron */
+.jumbotron-fifth {
+  background-color: white;
+}
+
+/* adjust margin for mobile footer */
+.footer-mobile {
+  margin-bottom: -20px;
+  margin-top: 30px;
+}
+
+/* adjust margin for desktop footer */
+.footer-desktop {
+  margin-top: -40px;
+}
+
+/* justify game description text */
+.p-description {
+  text-align: justify;
+}
+
+/* add lines between collaborators */
+hr {
+  border-top: 5px solid lightgrey;
+}
+
+/* add padding for double arrow icon */
+.fa-angle-double-right {
+  padding-right: 10px;
+}
+
+/* adjust size for collaborator pictures and add padding */
+.fluid-logot {
+  width: 300px;
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+/* adjust size for nav logo */
+.fluid-logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* change link hovering to black */
+a:hover {
+  color: black
+}
+
+/* adjustments for desktop */
+@media (min-width: 576px) {
+
+  /* remove hr element */
+  hr {
+    display: none;
+  }
+  
+  /* remove mobile footer */
+  .footer-mobile {
+    display: none;
+  }
+
+}
+
+/* adjustment for mobile */
+@media (max-width: 576px) {
+
+  /* remove desktop footer */
+  .footer-desktop {
+    display: none;
+  }
+
+  /* add space between team pictures */
+  .fluid-tiimikuva {
+    margin-bottom: 40px;
+  }
+   
+  /* resize and adjust google play logo */
+  .fluid-google-logo {
+    width: 252px;
+    height: 108px;
+    margin-top: -30px;
+  }
+
+  /* make background cover the area */
+  .jumbotron-first {
+    background-size: cover;
+  }
+
+  h1.first {
+    font-size: 55px;
+  }
+
+  /* add space between collaborator logos */
+  .fluid-logot {
+    margin: 20px;
+  }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  /* add space between images and names */
+  .fluid-tiimikuva {
+    margin-bottom: 40px;
+  }
+
+  h1.first {
+    font-size: 40px;
+  }
+
+  /* make background cover the area */
+  .jumbotron-first {
+    background-size: cover;
+  }
+  
+  /* add space between collaborator logos */
+  .fluid-logot {
+    margin: 20px;
+  }
+
+}
